@@ -10,26 +10,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SimpleChat">
         <activity
+            android:name=".topMenu.settings.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".topMenu.profil.ProfilActivity"
+            android:exported="false" />
+        <activity
             android:name=".login.signUp.SignUpActivity"
             android:exported="false" />
         <activity
             android:name=".login.singIn.SignInActivity"
-            android:exported="true" >
+            android:exported="true" />
+        <activity
+            android:name=".splashScreen.SplashScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".splashScreen.SplashScreenActivity"
-            android:exported="false" >
-
-        </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-
         </activity>
     </application>
 

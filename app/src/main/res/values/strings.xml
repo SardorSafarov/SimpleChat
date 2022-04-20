@@ -9,4 +9,12 @@
     <string name="sign_in">Sign in</string>
     <string name="don_t_have_an_acocount">Don\'t have an acocount?</string>
     <string name="already_have_an_acocount">Already have an acocount?</string>
+    <string name="whatsup">WhatsUp</string>
+    <string name="profil">Profil</string>
+    <string name="settings">Settings</string>
+    <string name="update">Update</string>
+    <string name="phone">Phone</string>
+    <string name="change_avatar">Change avatar</string>
+    <string name="take_photo">Take photo</string>
+    <string name="from_gallery">From gallery</string>
 </resources>
