@@ -16,7 +16,7 @@
             android:layout_width="40dp"
             android:layout_height="50dp"
             android:paddingStart="20sp"
-            android:paddingTop="25dp"
+            android:paddingTop="20sp"
             android:src="@drawable/ic_baseline_keyboard_backspace_24"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

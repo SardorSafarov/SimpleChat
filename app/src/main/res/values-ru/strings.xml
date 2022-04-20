@@ -18,4 +18,8 @@
     <string name="change_avatar">Change avatar</string>
     <string name="take_photo">Take photo</string>
     <string name="from_gallery">From gallery</string>
+    <string name="language">Language</string>
+    <string name="theme">Theme</string>
+    <string name="logout">Logout</string>
+    <string name="share">Share</string>
 </resources>

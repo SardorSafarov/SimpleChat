@@ -5,17 +5,27 @@
       <map>
         <entry key="..\:/SimpleChat/app/src/main/res/drawable/bottom_sheet_backround.xml" value="0.217" />
         <entry key="..\:/SimpleChat/app/src/main/res/drawable/button_background.xml" value="0.1885" />
+        <entry key="..\:/SimpleChat/app/src/main/res/drawable/chat_edit_text_backgrount.xml" value="0.19" />
+        <entry key="..\:/SimpleChat/app/src/main/res/drawable/come_message_bacground.xml" value="0.19" />
         <entry key="..\:/SimpleChat/app/src/main/res/drawable/edit_text_backgrount.xml" value="0.27" />
         <entry key="..\:/SimpleChat/app/src/main/res/drawable/ic_baseline_keyboard_backspace_24.xml" value="0.217" />
         <entry key="..\:/SimpleChat/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.217" />
+        <entry key="..\:/SimpleChat/app/src/main/res/drawable/ic_language.xml" value="0.217" />
+        <entry key="..\:/SimpleChat/app/src/main/res/drawable/ic_logout.xml" value="0.277" />
         <entry key="..\:/SimpleChat/app/src/main/res/drawable/ic_photo_gallery_svgrepo_com.xml" value="0.217" />
+        <entry key="..\:/SimpleChat/app/src/main/res/drawable/ic_send_message_ic.xml" value="0.19" />
+        <entry key="..\:/SimpleChat/app/src/main/res/drawable/ic_theme.xml" value="0.217" />
+        <entry key="..\:/SimpleChat/app/src/main/res/drawable/send_message_background.xml" value="0.19" />
+        <entry key="..\:/SimpleChat/app/src/main/res/layout/activity_chat.xml" value="0.22" />
         <entry key="..\:/SimpleChat/app/src/main/res/layout/activity_main.xml" value="0.29322916666666665" />
         <entry key="..\:/SimpleChat/app/src/main/res/layout/activity_profil.xml" value="0.25" />
-        <entry key="..\:/SimpleChat/app/src/main/res/layout/activity_settings.xml" value="0.2791666666666667" />
+        <entry key="..\:/SimpleChat/app/src/main/res/layout/activity_settings.xml" value="0.22" />
         <entry key="..\:/SimpleChat/app/src/main/res/layout/activity_sign_in.xml" value="0.33" />
         <entry key="..\:/SimpleChat/app/src/main/res/layout/activity_sign_up.xml" value="0.2791666666666667" />
         <entry key="..\:/SimpleChat/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
         <entry key="..\:/SimpleChat/app/src/main/res/layout/bottom_shet_bar_select_image.xml" value="0.29322916666666665" />
+        <entry key="..\:/SimpleChat/app/src/main/res/layout/come_message.xml" value="0.29322916666666665" />
+        <entry key="..\:/SimpleChat/app/src/main/res/layout/item_send_message.xml" value="0.29322916666666665" />
         <entry key="..\:/SimpleChat/app/src/main/res/layout/item_user_chat.xml" value="0.29322916666666665" />
         <entry key="..\:/SimpleChat/app/src/main/res/menu/top_menu.xml" value="0.29322916666666665" />
       </map>

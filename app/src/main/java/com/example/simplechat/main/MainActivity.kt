@@ -1,4 +1,4 @@
-package com.example.simplechat
+package com.example.simplechat.main
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -10,8 +10,10 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.view.menu.MenuBuilder
 import androidx.appcompat.view.menu.MenuPopupHelper
+import com.example.simplechat.R
 import com.example.simplechat.databinding.ActivityMainBinding
 import com.example.simplechat.topMenu.profil.ProfilActivity
+import com.example.simplechat.topMenu.settings.SettingsActivity
 
 
 class MainActivity : AppCompatActivity() {
@@ -49,9 +51,22 @@ class MainActivity : AppCompatActivity() {
             override fun onMenuItemSelected(menu: MenuBuilder, item: MenuItem): Boolean {
                 when(item.itemId)
                 {
-                    R.id.profil->{
+                    R.id.profil ->{
                         startActivity(Intent(this@MainActivity,ProfilActivity::class.java))
                         true
+                    }
+                    R.id.settings ->{
+                        startActivity(Intent(this@MainActivity,SettingsActivity::class.java))
+                        true
+                    }
+                    R.id.share ->
+                    {
+                        val intent = Intent()
+                        intent.action = Intent.ACTION_SEND
+                        intent.putExtra(Intent.EXTRA_TEXT,
+                            "Ishlab chiqaruvchi Sardor Safarov \nMurojat uchun tel:+99899 505 66 98");
+                        intent.type = "text/plain"
+                        startActivity(intent)
                     }
                     else -> false
                 }
