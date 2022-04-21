@@ -1,7 +1,8 @@
 package com.example.simplechat.entity
 
 class UserEntity(
-    val userName:String,
-    val passwor:String,
-    val image:Int
+    var _id:String,
+    var name:String,
+    var email:String,
+    var image_url:String
 )

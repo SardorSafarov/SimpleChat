@@ -24,5 +24,6 @@
     <string name="dialog_logout">Do you want to go out?</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
+    <string name="name">Name</string>
 
 </resources>
