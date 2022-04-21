@@ -60,7 +60,7 @@
         app:layout_constraintTop_toBottomOf="@+id/view" />
 
     <EditText
-        android:id="@+id/user_name_edit_text"
+        android:id="@+id/email_address_edit_text"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="20sp"
@@ -78,10 +78,10 @@
         android:layout_height="50dp"
         android:backgroundTint="@color/main_color"
         app:cardCornerRadius="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/user_name_edit_text"
+        app:layout_constraintBottom_toBottomOf="@+id/email_address_edit_text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/user_name_edit_text"
-        app:layout_constraintTop_toTopOf="@+id/user_name_edit_text">
+        app:layout_constraintStart_toEndOf="@+id/email_address_edit_text"
+        app:layout_constraintTop_toTopOf="@+id/email_address_edit_text">
 
         <ImageView
             android:layout_width="match_parent"

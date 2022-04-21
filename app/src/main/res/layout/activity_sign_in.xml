@@ -6,9 +6,11 @@
     android:overScrollMode="never"
     android:layout_height="match_parent"
     tools:context=".login.singIn.SignInActivity">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
@@ -39,16 +41,21 @@
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="30dp"
             android:orientation="vertical"
+            android:layout_marginBottom="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView">
 
             <EditText
-                android:id="@+id/user_name_edit_text"
+                android:id="@+id/email_address_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="10dp"
-                android:inputType="textCapWords"
                 android:background="@drawable/edit_text_backgrount"
-                android:hint="@string/user_name"
+                android:hint="@string/email_address"
+                android:inputType="textCapWords"
                 android:paddingStart="20dp" />
 
             <EditText
@@ -56,7 +63,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="10dp"
-                android:inputType="numberPassword"
+                android:inputType="textPassword"
                 android:background="@drawable/edit_text_backgrount"
                 android:hint="@string/password"
                 android:paddingStart="20dp" />
@@ -65,19 +72,19 @@
                 android:id="@+id/sign_in_btn"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 android:layout_width="match_parent"
-                app:cardCornerRadius="20dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:backgroundTint="#0AD486"
-                app:cornerRadius="20dp" >
+                app:cardCornerRadius="20dp"
+                app:cornerRadius="20dp">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="@string/sign_in"
                     android:textColor="@color/white"
-                    android:textSize="20dp"
-                    />
+                    android:textSize="20dp" />
             </com.google.android.material.card.MaterialCardView>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -91,11 +98,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity=""
+                    android:layout_marginStart="80dp"
                     android:layout_marginTop="5dp"
                     android:text="@string/don_t_have_an_acocount"
                     android:textColor="#A6ABB1"
                     android:textSize="15sp"
-                    android:layout_marginStart="80dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
