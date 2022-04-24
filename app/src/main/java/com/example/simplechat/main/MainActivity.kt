@@ -10,21 +10,43 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.view.menu.MenuBuilder
 import androidx.appcompat.view.menu.MenuPopupHelper
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProviders
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.simplechat.R
+import com.example.simplechat.adapter.users.UsersAdapter
 import com.example.simplechat.databinding.ActivityMainBinding
+import com.example.simplechat.entity.UserEntity
+import com.example.simplechat.firebase.viewModel.login.LoginViewModel
 import com.example.simplechat.topMenu.profil.ProfilActivity
 import com.example.simplechat.topMenu.settings.SettingsActivity
 
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var binding:ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding
+    private val userChatViewModel: LoginViewModel by lazy {
+        ViewModelProviders.of(this).get(LoginViewModel::class.java)
+    }
+    private val adapter: UsersAdapter by lazy { UsersAdapter() }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         window.statusBarColor = Color.WHITE
         topMenu()
+        recycListUser()
+
     }
+
+    private fun recycListUser() {
+        binding.userList.adapter = adapter
+        binding.userList.layoutManager = LinearLayoutManager(this)
+        userChatViewModel.readChatUser()
+        userChatViewModel.user.observe(this, Observer {
+            adapter.getData(it as MutableList<UserEntity>)
+        })
+    }
+
 
     private fun topMenu() {
         val clickListener = View.OnClickListener { view ->

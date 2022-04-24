@@ -5,4 +5,6 @@ class UserEntity(
     var name:String,
     var email:String,
     var image_url:String
-)
+){
+    constructor():this("","","","")
+}
