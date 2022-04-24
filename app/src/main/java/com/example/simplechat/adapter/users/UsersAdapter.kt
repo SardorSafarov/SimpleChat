@@ -9,16 +9,22 @@ import com.example.simplechat.databinding.ItemUserChatBinding
 import com.example.simplechat.entity.UserEntity
 
 
-class UsersAdapter() : RecyclerView.Adapter<UsersAdapter.ViewHolder>() {
+class UsersAdapter(private val listener:userOnclickListener) : RecyclerView.Adapter<UsersAdapter.ViewHolder>() {
 
+    interface userOnclickListener{
+        fun setOnClickListener(_id: String)
+    }
 
     var list :MutableList<UserEntity> = mutableListOf()
 
-    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         private val bind = ItemUserChatBinding.bind(view)
         fun bind(userEntity: UserEntity)
         {
             bind.userName.text = userEntity.name
+            itemView.setOnClickListener {
+                listener.setOnClickListener(userEntity._id)
+            }
         }
     }
 

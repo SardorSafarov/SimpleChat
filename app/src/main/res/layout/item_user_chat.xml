@@ -4,6 +4,15 @@
     android:layout_width="match_parent"
     android:layout_height="80dp">
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#999"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/materialCardView"
         android:layout_width="60dp"
@@ -17,9 +26,9 @@
         <ImageView
             android:id="@+id/user_image"
             android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:padding="10dp"
-            android:src="@drawable/ic_baseline_person_24"
-            android:layout_height="match_parent" />
+            android:src="@drawable/ic_baseline_person_24" />
     </com.google.android.material.card.MaterialCardView>
 
     <TextView
